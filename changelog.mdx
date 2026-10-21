@@ -1,0 +1,16 @@
+---
+title: "Changelog"
+description: "Product updates and improvements"
+rss: true
+---
+
+<Update label="October 21, 2026" tags={["Security"]}>
+  ## Bug fixes
+
+  - **Agent Governance Toolkit: patched `hono` and `rustls`.** The MCP proxy, MCP server, policy engine, and Node SDK now use `hono` 4.13.13 and `rustls` 0.23.45. These versions address advisories GHSA-5r4p-p66f-jhc7 and GHSA-2mjx-qc3c-rqvc.
+  - **Agent Governance Toolkit: patched `aiohttp`.** The cloud board service now uses `aiohttp` 3.14.4, which fixes three published advisories. It also picks up a `cryptography` 50.0.2 OpenSSL refresh with no API changes.
+  - **Agent Governance Toolkit: patched `follow-redirects`.** The Copilot extension now uses `follow-redirects` 1.16.1.
+  - **Surf: patched `markdown-it`.** Markdown rendering now uses `markdown-it` 14.3.3, which addresses advisory GHSA-r7fv-28h4-cvq7.
+
+  No action is needed beyond updating to the latest version.
+</Update>
