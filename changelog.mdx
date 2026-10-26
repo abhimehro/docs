@@ -1,8 +1,18 @@
 ---
 title: "Changelog"
-description: "Security updates and bug fixes, including patched hono, rustls, aiohttp, and follow-redirects in Agent Governance Toolkit and markdown-it in Surf."
+description: "Product updates and fixes, including a responsive threat-score meter and clearer Outlook sign-in errors in Email Security Pipeline, plus security patches across projects."
 rss: true
 ---
+
+<Update label="October 26, 2026" tags={["Email Security Pipeline"]}>
+  ## Updates
+
+  - **Email Security Pipeline: threat-score meter scales with your terminal.** The threat-score bar in console alerts now grows and shrinks with the alert card width. Wide terminals show a more detailed meter, and narrow terminals keep a readable minimum size.
+
+  ## Bug fixes
+
+  - **Email Security Pipeline: clearer Outlook sign-in errors.** When an Outlook connection fails during connectivity diagnostics, you now see a tip explaining that personal Outlook accounts require OAuth2 instead of a password. Until OAuth2 is supported, disable Outlook or use Gmail or Proton Mail.
+</Update>
 
 <Update label="October 21, 2026" tags={["Security"]}>
   ## Bug fixes
