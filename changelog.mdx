@@ -1,8 +1,17 @@
 ---
 title: "Changelog"
-description: "Product updates and fixes, including a responsive threat-score meter and clearer Outlook sign-in errors in Email Security Pipeline, plus security patches."
+description: "Product updates and fixes, including safer Personal Config YAML checks, a hardened Series Correction pre-push hook, and Email Security Pipeline improvements."
 rss: true
 ---
+
+<Update label="October 28, 2026" tags={["Security"]}>
+  ## Bug fixes
+
+  - **Personal Config: safer YAML checks.** The repository structure validator now passes each YAML file name to Python as an argument instead of embedding it in code. File names with quotes or special characters can no longer break or inject into the check.
+  - **Series Correction: pre-push hook no longer runs machine-specific binaries.** The pre-push hook only looks for the PR recap tool in repo-relative paths, your `PATH`, `~/bin`, and `~/.local/bin`. To point at a custom build, set `PR_RECAP_BIN`.
+
+  No action is needed beyond pulling the latest version.
+</Update>
 
 <Update label="October 26, 2026" tags={["Email Security Pipeline"]}>
   ## Updates
